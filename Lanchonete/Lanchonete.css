@@ -1,0 +1,329 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: #000000;
+}
+
+#caixa-logo{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 20px 15px 0 100px;
+    width: 230px;
+    height: 230px;
+}
+
+nav{
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: gold;
+    text-decoration: underline;
+}
+
+.principal{
+    padding: 3em 0;
+    width: 940px;
+    margin: 0 auto;
+}
+
+.Img-hamburgueria{
+    width: 390px;
+    height: 240px;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+.text-principal{
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+}
+
+.corred{
+    color: orangered;
+}
+
+.principal p{
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa{
+    background: linear-gradient(white, black);
+}
+
+.main-2{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.text-2{
+    text-align: center;
+    color:black;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+
+.main-2 p{
+    margin: 0 0 2em;
+    text-align: center;
+    font-size: 17px;
+}
+
+.mapa-et{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.text-3{
+    text-align: center;
+    color:black;
+    font-size: 2em;
+    margin: 15px;
+}
+
+.conteudo-bn{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-bn{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.bn{
+    line-height: 1.5;
+}
+
+.bn:first-child{
+    font-weight: bold;
+}
+
+.bn:before{
+    content: "★";
+}
+
+.img-burguer{
+    width: 60%;
+    opacity: 0.4;
+    transition: 1s;
+    box-shadow: 10px 10px 10px 0  #000000;
+}
+
+.img-burguer:hover{
+    opacity: 1;
+}
+
+footer{
+    background-color: #000000;
+    padding: 30px 0px;
+}
+
+footer img{
+    margin: 20px 15px 0 100px;
+    width: 230px;
+    height: 230px;
+    margin: 2em auto;
+    margin: auto;
+    display: block;
+}
+
+.Copyright{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    max-width: 20px 0 0;
+}
+
+@media (max-width: 480px) {
+    #caixa-logo, .principal,.main-2, .conteudo-bn, .mapa-et{
+        width: auto;
+    }
+
+    nav{
+        position: static;
+        text-align: center;
+    }
+
+    .Img-hamburgueria{
+        width: 100%;
+    }
+
+    .text-principal{
+        padding: 1em;
+    }
+
+    .text-quemsomos{
+        padding: 0.5em;
+    }
+
+    .mapa iframe{
+        width: 100%;
+    }
+
+    .comments{
+        padding: 10px;
+    }
+
+    .lista-bn, .img-burguer{
+        width: 100%;
+    }
+
+    .principal p{
+        margin: 0 5px auto;
+    }
+
+    .mapa-et{
+        margin: 0 auto;
+    }
+
+    .lista-bn{
+        margin: 10px;
+    }
+}
+
+/*Página Contato*/
+
+.section_preenchimento{
+    margin: 2em;
+}
+
+.preenchimento{
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.form_preenchimento input{
+    width: 30%;
+    height: 25px;
+    font-size: 15px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.form_preenchimento textarea{
+    width: 30%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #000000;
+    resize: none;
+}
+
+.form_preenchimento span{
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: .5;
+}
+
+.form_preenchimento input:focus ~ span,
+.form_preenchimento textarea:focus ~ span,
+.form_preenchimento input:valid ~ span,
+.form_preenchimento textarea:valid ~ span
+{
+    transform: translateY(-25px);
+    font-size: 17px;
+    opacity: 1;
+}
+
+.form_preenchimento button{
+    color: aliceblue;
+    width: 30%;
+    height: 30px;
+    background-color: #0670b8;
+    border-radius: 5px;
+    border: 0;
+    transition: 0.5s; 
+    cursor: pointer;
+}
+
+.form_preenchimento button:hover{
+    background-color: #022d49;
+}
+
+.form_preenchimento button:active{
+    background-color: #01010c;
+}
+
+.preenchimento p{
+    font-size: 15px;
+    padding: 0.5em;
+}
+
+.text-fav{
+    position: relative;
+    text-align: right;
+    font-size: 25px;
+    top: -410px;
+    text-align: center;
+    
+}
+
+.lanche_favorito{
+    position: relative;
+    border: 5px solid #000000;
+    max-width: 550px;
+    top: -400px;
+    float: right;
+    margin-right: 50px;
+    
+}
+
+
+
+@media (max-width: 480px) {
+    .section_preenchimento{
+        width: auto;
+    }
+
+    .form_preenchimento input{
+        width: 100%;
+    }
+
+    .form_preenchimento textarea{
+        width: 100%;
+    }
+
+    .form_preenchimento button{
+        width: 100%;
+    }
+}
+
